@@ -1,19 +1,99 @@
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: #f2f2f2;
+    cursor: pointer;
+    padding: 14px 16px;
+}
+
+@media screen and (orientation: portrait) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        left: -220px;
+        top: 0;
+        width: 200px;
+        height: 100%;
+        background: #333;
+        flex-direction: column;
+        transition: left 0.4s;
+        padding-top: 60px;
+        z-index: 1000;
+    }
+
+    .nav-links.open {
+        left: 0;
+    }
+
+    .nav-links a {
+        width: 85%;
+        float: none;
+        display: block;
+        text-align: left;
+        margin-left: 0;
+        padding: 16px 24px;
+        font-size: 18px;
+        border-bottom: 1px solid #444;
+    }
+
+    .topnav {
+        position: relative;
+    }
+}
+
+/* Landscape on small devices */
+@media screen and (orientation: landscape) {
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: auto;
+        background: none;
+        padding-top: 0;
+        left: 0;
+        transition: none;
+    }
+
+    .nav-links a {
+        float: left;
+        display: block;
+        text-align: center;
+        margin-left: 1%;
+        padding: 14px 14px;
+        font-size: 17px;
+        border-bottom: none;
+    }
+
+    .topnav a {
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+}
+
 .raleway-font {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 5;
-    font-style: normal; 
+    font-style: normal;
 }
 
-body{
+body {
     font-family: "Raleway", sans-serif;
 }
 
 .topnav {
     background-color: #333;
     overflow: hidden;
-    margin-left: 3%;
-    margin-right: 3%;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -36,4 +116,5 @@ body{
 /* Add a color to the active/current link */
 .topnav a.active {
     background-color: #04AA6D;
-    color: white; }
+    color: white;
+}
