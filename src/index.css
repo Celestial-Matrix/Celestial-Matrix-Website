@@ -1,0 +1,39 @@
+.raleway-font {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 5;
+    font-style: normal; 
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 1%;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white; }
