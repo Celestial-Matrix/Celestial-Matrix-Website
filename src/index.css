@@ -29,6 +29,7 @@
     padding: 35px 16px;
     font-family: "Comfortaa", sans-serif
 }
+
 .CompanyLogo {
     float: left;
     padding: 14px 16px;
@@ -43,27 +44,43 @@
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
-    font-style: normal; }
+    font-style: normal;
+}
 
 @media screen and (orientation: portrait) {
 
+    .Slogan {
+        position: block;
+        padding: 20px 5px;
+    }
+
+    .SloganLogo {
+        height: auto;
+        width: 50%;
+        padding: 14px 10px;
+        aligjn-items: center;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+
     .CompanyLogo {
-            float: left;
-            padding: 14px 20px;
-            color: #f2f2f2;
-            font-size: 24px;
-            font-weight: bold;
-            height: auto;
-            width: 80%;   
-        }
+        float: left;
+        padding: 14px 20px;
+        color: #f2f2f2;
+        font-size: 24px;
+        font-weight: bold;
+        height: auto;
+        width: 80%;
+    }
 
     .logo-text {
-            font-size: 24px;
-            color: #f2f2f2;
-            font-weight: bold;
-            text-align: center;
-            padding: 16px 50px;
-            font-family: "Comfortaa", sans-serif
+        font-size: 24px;
+        color: #f2f2f2;
+        font-weight: bold;
+        text-align: center;
+        padding: 16px 50px;
+        font-family: "Comfortaa", sans-serif
     }
 
     .menu-toggle {
