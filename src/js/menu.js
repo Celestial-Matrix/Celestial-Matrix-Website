@@ -13,3 +13,22 @@ document.addEventListener('DOMContentLoaded', function () {
         overlay.classList.remove('active');
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const techText = document.getElementById('tech-text');
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    techText.classList.add('visible');
+                }
+                else {
+                    techText.classList.remove('visible');
+                }
+            });
+        },
+        { threshold: 0.5 }
+    );
+    observer.observe(techText);
+});
