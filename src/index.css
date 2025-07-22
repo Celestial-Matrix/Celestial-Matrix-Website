@@ -7,7 +7,7 @@ html {
     color: #f2f2f2;
     font-size: 30px;
     font-weight: 600;
-    opacity: 0;
+    opacity: 1;
 }
 
 
@@ -63,6 +63,7 @@ html {
     font-weight: 300;
     font-style: normal;
 }
+
 .topnav {
     /* ...existing code... */
     z-index: 10;
@@ -71,19 +72,21 @@ html {
     background: #fff;
     /* or your preferred color */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-    /* subtle shadow for separation */ }
+    /* subtle shadow for separation */
+}
 
 .topnav+.content-bg {
-    margin-top: 32px; }
+    margin-top: 32px;
+}
 
-.content-bg{
+.content-bg {
     margin-top: 100px;
     position: relative;
-    background-color:#333;
+    background-color: #333;
     height: 10%;
     width: auto;
     max-height: 350px;
-    display:-ms-flexbox;
+    display: -ms-flexbox;
     flex-direction: row;
     overflow: hidden;
 }
@@ -176,41 +179,44 @@ html {
     }
 }
 
-/* Landscape on small devices */
-@media screen and (orientation: landscape) {
-
+@media screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
     .divider {
-       font-size: 60%;
-       position: relative;
-        top: 30%;
+        font-size: 300px;
+        position: fixed;
+        top: 10%;
+        right: 67.5%;
+        color: #f2f2f2;
     }
 
     .fade-in {
-        position: fixed;
+        position: relative;
         display: flex;
-        bottom: 600px;
-        left: 47%;
-        z-index: 100;
+        top: -1050px;
+        left: 32.5%;
+        font-size: 50px;
+        color: #f2f2f2;
+        z-index: 1000;
     }
 
-    
+
 
     .Slogan {
-        display: flex           ;
+        display: flex;
         margin: 1%;
         position: relative;
         padding: 20px 5px;
         color: #f2f2f2;
-        font-size: 30px;
+        font-size: 150px;
         font-weight: 700;
-        bottom: -90px;
-        left: 600px;
+        bottom: -20px;
+        left: 30%;
     }
+
 
     .SloganLogo {
         position: fixed;
         height: auto;
-        width: 25%;
+        width: 23%;
         display: flex;
         padding: 14px 60px;
         align-items: left;
@@ -218,8 +224,8 @@ html {
         margin: 1%;
         display: block;
         color: #f2f2f2;
-        right: 50%;
-        top: 14%;
+        right: 68%;
+        top: 9.5%;
     }
 
     .CompanyLogo {
@@ -263,6 +269,99 @@ html {
         padding: 10px 12px;
     }
 }
+
+/* Landscape on small devices */
+@media screen and (orientation: landscape) and (not ((width: 1366px) and (height: 1024px))) {
+
+    .divider {
+        font-size: 330px;
+        position: fixed;
+        top: 12%;
+        right: 65%;
+        color: #f2f2f2;
+    }
+
+    .fade-in {
+        position: absolute;
+        display: flex;
+        top: 60%;
+        left: 36%;
+        font-size: 50px;
+        color: #f2f2f2;
+        z-index: 1000;
+        opacity: 1;
+    }
+
+    .Slogan {
+        display: flex;
+        margin: 1%;
+        position: absolute;
+        padding: 20px 5px;
+        color: #f2f2f2;
+        font-size: 1100%;
+        font-weight: 700;
+        bottom: 25%;
+        left: 33%;
+    }
+
+    .SloganLogo {
+        position: fixed;
+        height: auto;
+        width: 25%;
+        display: flex;
+        padding: 14px 60px;
+        align-items: left;
+        text-align: left;
+        margin: 1%;
+        display: block;
+        color: #f2f2f2;
+        right: 65%;
+        top: 13.55%;
+    }
+
+    .CompanyLogo {
+        float: left;
+        padding: 14px 16px;
+        color: #f2f2f2;
+        font-size: 24px;
+        font-weight: bold;
+        height: auto;
+        width: 5%;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: auto;
+        background: none;
+        padding-top: 0;
+        left: 0;
+        transition: none;
+    }
+
+    .nav-links a {
+        float: left;
+        display: block;
+        text-align: center;
+        margin-left: 1%;
+        padding: 14px 14px;
+        font-size: 17px;
+        border-bottom: none;
+    }
+
+    .topnav a {
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+}
+
+
 
 .raleway-font {
     font-family: "Raleway", sans-serif;
